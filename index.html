@@ -21,35 +21,36 @@
   </head>
   <body>
     <header>
-      <div class="top-line">
-        <a href="./index.html"><img src="./images/logo.jpg" width="115" /></a>
-        <!-- Header Left Side -->
-        <div>
-          <nav>
-            <ul class="list-design">
-              <li><a href="studio.html">Studio</a></li>
-              <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-          </nav>
-        </div>
-        <!-- Header Left Side -->
-        <!-- Header Right Side -->
-        <div>
-          <ul class="second-list-design">
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+      <a href="./index.html"
+        ><img src="./images/logo.jpg" alt="Logo" width="115"
+      /></a>
+      <!-- Header Left Side -->
+      <div>
+        <nav>
+          <ul class="list-design">
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
+      <!-- Header Left Side -->
+      <!-- Header Right Side -->
+      <div>
+        <ul class="second-list-design">
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+        </ul>
+      </div>
+
       <!-- Header Right Side -->
     </header>
 
     <main>
       <!-- Hero Side -->
-      <section class="hero-line">
+      <section class="hero">
         <h1>Effective Solutions for Your Business</h1>
-        <button type="button">Order Service</button>
+        <button class="btn">Order Service</button>
       </section>
       <!-- Hero Side -->
       <!-- First Section -->
@@ -91,40 +92,56 @@
         <h2>Our Team</h2>
         <ul class="team-list">
           <li>
-            <img
-              src="./images/img1.jpg"
-              width="264"
-              alt="Mark Guerrero - Product Designer"
-            />
-            <h3>Mark Guerrero</h3>
-            <p>Product Designer</p>
+            <div class="card">
+              <img
+                src="./images/img1.jpg"
+                width="264"
+                alt="Mark Guerrero - Product Designer"
+              />
+              <div class="card-bottom">
+                <h3>Mark Guerrero</h3>
+                <p>Product Designer</p>
+              </div>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/img2.jpg"
-              width="264"
-              alt="Tom Ford - Frontend Developer"
-            />
-            <h3>Tom Ford</h3>
-            <p>Frontend Developer</p>
+            <div class="card">
+              <img
+                src="./images/img2.jpg"
+                width="264"
+                alt="Tom Ford - Frontend Developer"
+              />
+              <div class="card-bottom">
+                <h3>Tom Ford</h3>
+                <p>Frontend Developer</p>
+              </div>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/img3.jpg"
-              width="264"
-              alt="Camila Garcia - Marketing"
-            />
-            <h3>Camila Garcia</h3>
-            <p>Marketing</p>
+            <div class="card">
+              <img
+                src="./images/img3.jpg"
+                width="264"
+                alt="Camila Garcia - Marketing"
+              />
+              <div class="card-bottom">
+                <h3>Camila Garcia</h3>
+                <p>Marketing</p>
+              </div>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/img4.jpg"
-              width="264"
-              alt="Daniel Wilson - UI Designer"
-            />
-            <h3>Daniel Wilson</h3>
-            <p>UI Designer</p>
+            <div class="card">
+              <img
+                src="./images/img4.jpg"
+                width="264"
+                alt="Daniel Wilson - UI Designer"
+              />
+              <div class="card-bottom">
+                <h3>Daniel Wilson</h3>
+                <p>UI Designer</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -135,54 +152,82 @@
         <h2>Our Portfolio</h2>
         <ul class="portfolio-list">
           <li>
-            <img src="./images/bankingapp.jpg" width="360" alt="Banking App" />
-            <h3>Banking App</h3>
-            <p>App</p>
+            <div class="portfolio-card">
+              <img
+                src="./images/bankingapp.jpg"
+                width="360"
+                alt="Banking App"
+              />
+              <div class="portfolio-card-bottom">
+                <h3>Banking App</h3>
+                <p>App</p>
+              </div>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/cashlesspayment.jpg"
-              width="360"
-              alt="Cashless Payment"
-            />
-            <h3>Cashless Payment</h3>
-            <p>Marketing</p>
+            <div class="portfolio-card">
+              <img
+                src="./images/cashlesspayment.jpg"
+                width="360"
+                alt="Cashless Payment"
+              />
+              <div class="portfolio-card-bottom">
+                <h3>Cashless Payment</h3>
+                <p>Marketing</p>
+              </div>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/meditationapp.jpg"
-              width="360"
-              alt="Meditation App"
-            />
-            <h3>Meditation App</h3>
-            <p>App</p>
+            <div class="portfolio-card">
+              <img
+                src="./images/meditationapp.jpg"
+                width="360"
+                alt="Meditation App"
+              />
+              <div class="portfolio-card-bottom">
+                <h3>Meditation App</h3>
+                <p>App</p>
+              </div>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/taxiservice.jpg"
-              width="360"
-              alt="Taxi Service"
-            />
-            <h3>Taxi Service</h3>
-            <p>Marketing</p>
+            <div class="portfolio-card">
+              <img
+                src="./images/taxiservice.jpg"
+                width="360"
+                alt="Taxi Service"
+              />
+              <div class="portfolio-card-bottom">
+                <h3>Taxi Service</h3>
+                <p>Marketing</p>
+              </div>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/screen.jpg"
-              width="360"
-              alt="Screen Illustrations"
-            />
-            <h3>Screen Illustrations</h3>
-            <p>Design</p>
+            <div class="portfolio-card">
+              <img
+                src="./images/screen.jpg"
+                width="360"
+                alt="Screen Illustrations"
+              />
+              <div class="portfolio-card-bottom">
+                <h3>Screen Illustrations</h3>
+                <p>Design</p>
+              </div>
+            </div>
           </li>
           <li>
-            <img
-              src="./images/onlinecourses.jpg"
-              width="360"
-              alt="Online Courses"
-            />
-            <h3>Online Courses</h3>
-            <p>Marketing</p>
+            <div class="portfolio-card">
+              <img
+                src="./images/onlinecourses.jpg"
+                width="360"
+                alt="Online Courses"
+              />
+              <div class="portfolio-card-bottom">
+                <h3>Online Courses</h3>
+                <p>Marketing</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
@@ -190,7 +235,9 @@
     </main>
 
     <footer class="footer">
-      <a href="./index.html"><img src="./images/logo.jpg" /></a>
+      <a href="./index.html"
+        ><img src="./images/footerlogo.jpg" alt="Logo" width="115"
+      /></a>
       <p>
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.

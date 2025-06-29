@@ -1,16 +1,24 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
 body {
+  color: black;
+  background-color: #fff;
   font-family: "Roboto", sans-serif;
-  background-color: #f4f4fd;
 }
 
 a {
   text-decoration: none;
-  color: #2e2f42;
 }
 
-/* header */
-.top-line {
-  background-color: #ffffff;
+/* Header Styles */
+header {
+  background-color: #fff;
   display: flex;
   padding-left: 200px;
   padding-top: 20px;
@@ -25,6 +33,10 @@ a {
   padding-left: 100px;
 }
 
+.list-design > li > a {
+  color: #2e2f42;
+  font-weight: 500;
+}
 .second-list-design {
   display: flex;
   list-style: none;
@@ -32,40 +44,61 @@ a {
   gap: 50px;
   padding-left: 300px;
 }
-/* header */
 
-/* hero line */
-.hero-line {
-  background-color: #2e2f42;
-  color: #fff;
+.second-list-design > li > a {
+  color: #434455;
+  font-weight: 400;
+}
+
+.second-list-design > li > a:focus,
+.second-list-design > li > a:hover,
+.list-design > li > a:focus,
+.list-design > li > a:hover {
+  color: #4d5ae5;
+}
+
+/* Hero Section */
+.hero {
+  padding: 150px 0;
   text-align: center;
-  padding: 10%;
+  background: #2e2f42;
 }
 
-.hero-line h1 {
-  letter-spacing: 2%;
-  line-height: 60px;
-  font-weight: 500;
+.hero h1 {
   font-size: 56px;
-  line-height: 60px;
+  font-weight: 700;
+  margin: 0 auto 30px;
+  color: #fff;
+  margin-bottom: 15px;
+  line-height: 1.2;
   letter-spacing: 2%;
+  width: 496px;
+  height: 120px;
+  top: 260px;
+  left: 472px;
 }
 
-.hero-line button {
-  width: 169;
-  height: 56;
-  top: 428px;
-  left: 636px;
-  gap: 10px;
-  border-radius: 4px;
-  padding: 16px 32px;
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  margin: 50px auto 20px;
   background-color: #4d5ae5;
-  color: #fff;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s;
+  letter-spacing: 4%;
   cursor: pointer;
 }
-/* hero line */
 
-/* first section */
+.btn:focus,
+.btn:hover {
+  background-color: #1a5fc6;
+  transform: translateY(-2px);
+}
+
+/* First Section */
 .first-section {
   background-color: #fff;
 }
@@ -75,18 +108,40 @@ a {
   list-style: none;
   margin: 0px;
   gap: 8px;
-  padding: 5%;
-  font-weight: 400;
+  padding: 150px;
+  letter-spacing: 2%;
 }
-/* first section */
+.card-bottom h3,
+.portfolio-card h3,
+.first-section-list > li > h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
 
-/* our team */
+.card-bottom p,
+.first-section-list > li > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
+
+/* Our Team */
 .team {
   background-color: #f4f4fd;
   text-align: center;
   padding: 5%;
   letter-spacing: 2%;
-  line-height: 40px;
+  line-height: 1.25;
+}
+
+.portfolio h2,
+.team h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25;
+  letter-spacing: 2%;
+  text-align: center;
 }
 
 .team-list {
@@ -99,35 +154,55 @@ a {
   padding: 16px 32px;
   padding-left: 6%;
 }
-/* our team */
 
-/* our portfolio */
+.card {
+  background-color: #fff;
+  box-shadow: 0 5px 15px #2e2f4229;
+}
+
+.card-bottom {
+  padding: 10px;
+  border-radius: 3px;
+}
+
 .portfolio {
   background-color: #fff;
-  text-align: center;
   padding: 5%;
+  margin: 0;
   letter-spacing: 2%;
-  line-height: 40px;
+  line-height: 2;
 }
 
 .portfolio-list {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 sütun */
+  gap: 24px; /* öğeler arası boşluk */
   list-style: none;
-  margin: 0px;
-  margin-top: 5%;
-  gap: 40px;
-  padding: 16px 32px;
-  padding-left: 6%;
+  padding: 150px;
+  margin: 0%;
 }
-/* our portfolio */
 
-/* footer */
+.portfolio-card {
+  border: 1px solid #e7e9fc;
+}
+
+.portfolio-card-bottom {
+  padding: 5%;
+}
+/* Footer */
 .footer {
   background-color: #2e2f42;
   padding: 7%;
-  color: #f4f4fd;
-  letter-spacing: 2%;
-  font-weight: 400;
 }
-/* footer */
+
+.footer p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  color: #f4f4fd;
+  width: 264px;
+  height: 72px;
+  top: 3128px;
+  left: 156px;
+}
